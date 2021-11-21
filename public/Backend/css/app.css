@@ -5283,12 +5283,12 @@ button.close {
 .modal-dialog-centered {
   display: flex;
   align-items: center;
-  min-height: calc(100% - (0.5rem * 2));
+  min-height: calc(100% - 1rem);
 }
 
 .modal-dialog-centered::before {
   display: block;
-  height: calc(100vh - (0.5rem * 2));
+  height: calc(100vh - 1rem);
   content: "";
 }
 
@@ -5380,11 +5380,11 @@ button.close {
   }
 
   .modal-dialog-centered {
-    min-height: calc(100% - (1.75rem * 2));
+    min-height: calc(100% - 3.5rem);
   }
 
   .modal-dialog-centered::before {
-    height: calc(100vh - (1.75rem * 2));
+    height: calc(100vh - 3.5rem);
   }
 
   .modal-sm {
@@ -7161,6 +7161,7 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7180,8 +7181,9 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -9572,147 +9574,147 @@ Creation date: 20/02/2020 18:17
 }
 
 .flaticon-edit:before {
-  content: "";
+  content: "\f100";
 }
 
 .flaticon-home:before {
-  content: "";
+  content: "\f101";
 }
 
 .flaticon-networking:before {
-  content: "";
+  content: "\f102";
 }
 
 .flaticon-enter:before {
-  content: "";
+  content: "\f103";
 }
 
 .flaticon-add-user:before {
-  content: "";
+  content: "\f104";
 }
 
 .flaticon-shapes-and-symbols:before {
-  content: "";
+  content: "\f105";
 }
 
 .flaticon-minus:before {
-  content: "";
+  content: "\f106";
 }
 
 .flaticon-technical-support:before {
-  content: "";
+  content: "\f107";
 }
 
 .flaticon-analytics:before {
-  content: "";
+  content: "\f108";
 }
 
 .flaticon-school:before {
-  content: "";
+  content: "\f109";
 }
 
 .flaticon-graduation-hat:before {
-  content: "";
+  content: "\f10a";
 }
 
 .flaticon-schedule:before {
-  content: "";
+  content: "\f10b";
 }
 
 .flaticon-pin:before {
-  content: "";
+  content: "\f10c";
 }
 
 .flaticon-next:before {
-  content: "";
+  content: "\f10d";
 }
 
 .flaticon-left-arrow:before {
-  content: "";
+  content: "\f10e";
 }
 
 .flaticon-bargain:before {
-  content: "";
+  content: "\f10f";
 }
 
 .flaticon-monitor:before {
-  content: "";
+  content: "\f110";
 }
 
 .flaticon-menu:before {
-  content: "";
+  content: "\f111";
 }
 
 .flaticon-fees:before {
-  content: "";
+  content: "\f112";
 }
 
 .flaticon-checked:before {
-  content: "";
+  content: "\f113";
 }
 
 .flaticon-alert:before {
-  content: "";
+  content: "\f114";
 }
 
 .flaticon-notification:before {
-  content: "";
+  content: "\f115";
 }
 
 .flaticon-email:before {
-  content: "";
+  content: "\f116";
 }
 
 .flaticon-laptop:before {
-  content: "";
+  content: "\f117";
 }
 
 .flaticon-gallery:before {
-  content: "";
+  content: "\f118";
 }
 
 .flaticon-image:before {
-  content: "";
+  content: "\f119";
 }
 
 .flaticon-youtube:before {
-  content: "";
+  content: "\f11a";
 }
 
 .flaticon-document:before {
-  content: "";
+  content: "\f11b";
 }
 
 .flaticon-down-arrow:before {
-  content: "";
+  content: "\f11c";
 }
 
 .flaticon-upload:before {
-  content: "";
+  content: "\f11d";
 }
 
 .flaticon-menu-1:before {
-  content: "";
+  content: "\f11e";
 }
 
 .flaticon-information:before {
-  content: "";
+  content: "\f11f";
 }
 
 .flaticon-pencil:before {
-  content: "";
+  content: "\f120";
 }
 
 .flaticon-delete:before {
-  content: "";
+  content: "\f121";
 }
 
 .flaticon-visibility-1:before {
-  content: "";
+  content: "\f122";
 }
 
 .flaticon-visibility:before {
-  content: "";
+  content: "\f123";
 }
 
 [data-simplebar] {
@@ -9827,6 +9829,7 @@ Creation date: 20/02/2020 18:17
 
 body {
   background-color: #eeeeee;
+  background-color: #e5eaea;
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -9836,6 +9839,7 @@ a {
   color: #e20840;
 }
 a:hover, a:focus, a:active {
+  outline: none;
   text-decoration: none;
   color: #a2062e;
 }
@@ -9922,7 +9926,7 @@ strong {
   margin-left: 0.255em;
   vertical-align: middle;
   border: 0;
-  content: "";
+  content: "\f10e";
   transform: rotate(-90deg);
   font-family: Flaticon;
   font-size: 12px;
@@ -10004,7 +10008,6 @@ strong {
 
 .adminLayout {
   overflow-y: hidden;
-  background-color: #fff;
   padding-top: 56px;
 }
 .adminLayout aside {
@@ -10015,10 +10018,8 @@ strong {
 }
 .adminLayout main {
   position: relative;
-  background-color: #e5eaea;
   width: calc(100% - 250px);
   float: left;
-  min-height: 100vh;
   transition: 0.2s;
   font-size: 14px;
 }
@@ -10407,6 +10408,10 @@ strong {
   min-height: 100vh;
 }
 
+.mh-400 {
+  min-height: 400px;
+}
+
 .modal-backdrop {
   background-color: #f5f5f5;
 }
@@ -10451,6 +10456,46 @@ strong {
 }
 .card-box .card-body {
   padding: 0.75rem 0.75rem;
+}
+
+.info-card {
+  background: #fff;
+  padding: 12px;
+}
+.info-card:hover {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0px 4px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.info-card .top-action {
+  color: #757575;
+}
+.info-card .top-action:hover {
+  color: #e20840;
+}
+.info-card .info-icon {
+  width: 60px;
+  margin-right: 8px;
+}
+.info-card .info-icon i {
+  font-size: 50px;
+}
+.info-card .media {
+  min-height: 130px;
+}
+.info-card.action-info {
+  padding: 0;
+  text-align: center;
+}
+.info-card.action-info a {
+  padding: 12px;
+  display: block;
+  color: #757575;
+}
+.info-card.action-info a:hover {
+  color: #e20840;
+}
+.info-card.action-info i {
+  display: block;
+  font-size: 50px;
 }
 
 .table-card .action-button {
@@ -10723,6 +10768,7 @@ tbody tr:hover .custom-control-label::before {
 }
 .partition-input .partition-inner {
   left: 0;
+  position: -webkit-sticky;
   position: sticky;
 }
 .partition-input input {
