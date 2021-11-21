@@ -1,0 +1,99 @@
+// Buttoons
+.btn {
+    padding: .375rem 1.2rem;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    &:hover {
+        // box-shadow: 0px 2px 10px rgba(78, 77, 77, 0.8);
+    }
+	&.btn-link {
+		// box-shadow: none !important;
+	}
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.processing {
+        transition: 1s;
+        letter-spacing: 12px;
+        color: $primary;
+
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:focus,
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+        background-color: darken( $primary, 3% );
+        color: #fff;
+        border-color: darken( #fff, 3% );
+        box-shadow: 0 0 0 0.1rem rgba($primary, 1);
+    }
+    &.disabled,
+    &:disabled {
+        background-color: lighten( $primary, 3% );
+        border-color: lighten( #fff, 3% );
+    }
+}
+
+.show>.btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle:focus {
+    background-color: darken( $primary, 3% );
+    border-color: darken( $primary, 3% );
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+        background-color: darken( $primary, 3% );
+        border-color: darken( $primary, 3% );
+    }
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    background-color: darken( $primary, 3% );
+    border-color: darken( $primary, 3% );
+}
+
+.btn-default {
+    color: #505050;
+    background: transparent;
+
+    &:hover {
+        color: #000;
+        background: #eaeaea;
+    }
+}
+
+.action-icon {
+    display: inline-block;
+    border-radius: 4px;
+    color: #000;
+    margin-right: 3px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    &:hover {
+        background: #efefef;
+    }
+    .icon {
+        display: block;
+        padding-top: 4px;
+    }
+}

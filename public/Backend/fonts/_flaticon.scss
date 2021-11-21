@@ -1,0 +1,112 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 20/02/2020 18:17
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-edit:before { content: "\f100"; }
+.flaticon-home:before { content: "\f101"; }
+.flaticon-networking:before { content: "\f102"; }
+.flaticon-enter:before { content: "\f103"; }
+.flaticon-add-user:before { content: "\f104"; }
+.flaticon-shapes-and-symbols:before { content: "\f105"; }
+.flaticon-minus:before { content: "\f106"; }
+.flaticon-technical-support:before { content: "\f107"; }
+.flaticon-analytics:before { content: "\f108"; }
+.flaticon-school:before { content: "\f109"; }
+.flaticon-graduation-hat:before { content: "\f10a"; }
+.flaticon-schedule:before { content: "\f10b"; }
+.flaticon-pin:before { content: "\f10c"; }
+.flaticon-next:before { content: "\f10d"; }
+.flaticon-left-arrow:before { content: "\f10e"; }
+.flaticon-bargain:before { content: "\f10f"; }
+.flaticon-monitor:before { content: "\f110"; }
+.flaticon-menu:before { content: "\f111"; }
+.flaticon-fees:before { content: "\f112"; }
+.flaticon-checked:before { content: "\f113"; }
+.flaticon-alert:before { content: "\f114"; }
+.flaticon-notification:before { content: "\f115"; }
+.flaticon-email:before { content: "\f116"; }
+.flaticon-laptop:before { content: "\f117"; }
+.flaticon-gallery:before { content: "\f118"; }
+.flaticon-image:before { content: "\f119"; }
+.flaticon-youtube:before { content: "\f11a"; }
+.flaticon-document:before { content: "\f11b"; }
+.flaticon-down-arrow:before { content: "\f11c"; }
+.flaticon-upload:before { content: "\f11d"; }
+.flaticon-menu-1:before { content: "\f11e"; }
+.flaticon-information:before { content: "\f11f"; }
+.flaticon-pencil:before { content: "\f120"; }
+.flaticon-delete:before { content: "\f121"; }
+.flaticon-visibility-1:before { content: "\f122"; }
+.flaticon-visibility:before { content: "\f123"; }
+    
+    $font-Flaticon-edit: "\f100";
+    $font-Flaticon-home: "\f101";
+    $font-Flaticon-networking: "\f102";
+    $font-Flaticon-enter: "\f103";
+    $font-Flaticon-add-user: "\f104";
+    $font-Flaticon-shapes-and-symbols: "\f105";
+    $font-Flaticon-minus: "\f106";
+    $font-Flaticon-technical-support: "\f107";
+    $font-Flaticon-analytics: "\f108";
+    $font-Flaticon-school: "\f109";
+    $font-Flaticon-graduation-hat: "\f10a";
+    $font-Flaticon-schedule: "\f10b";
+    $font-Flaticon-pin: "\f10c";
+    $font-Flaticon-next: "\f10d";
+    $font-Flaticon-left-arrow: "\f10e";
+    $font-Flaticon-bargain: "\f10f";
+    $font-Flaticon-monitor: "\f110";
+    $font-Flaticon-menu: "\f111";
+    $font-Flaticon-fees: "\f112";
+    $font-Flaticon-checked: "\f113";
+    $font-Flaticon-alert: "\f114";
+    $font-Flaticon-notification: "\f115";
+    $font-Flaticon-email: "\f116";
+    $font-Flaticon-laptop: "\f117";
+    $font-Flaticon-gallery: "\f118";
+    $font-Flaticon-image: "\f119";
+    $font-Flaticon-youtube: "\f11a";
+    $font-Flaticon-document: "\f11b";
+    $font-Flaticon-down-arrow: "\f11c";
+    $font-Flaticon-upload: "\f11d";
+    $font-Flaticon-menu-1: "\f11e";
+    $font-Flaticon-information: "\f11f";
+    $font-Flaticon-pencil: "\f120";
+    $font-Flaticon-delete: "\f121";
+    $font-Flaticon-visibility-1: "\f122";
+    $font-Flaticon-visibility: "\f123";

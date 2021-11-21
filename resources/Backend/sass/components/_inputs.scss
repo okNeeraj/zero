@@ -1,0 +1,65 @@
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba($primary, 0.5);
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+}
+
+tbody tr:hover .custom-control-label::before {
+    border-color: #9a9a9a;
+}
+
+.custom-control-label {
+    &::before {
+        border: 2px solid #d0d0d0;
+        background-color: #f3f3f3;
+        cursor: pointer;
+    }
+
+    &:hover::before {
+        border-color: lighten($primary, 27%) !important;
+    }
+}
+
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-label {
+    vertical-align: middle;
+}
+
+.partition-input {
+    width: 190px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .partition-inner {
+        left: 0;
+        position: sticky;
+    }
+
+    input {
+        padding-left: 15px;
+        height: calc(2.25rem + 2px);
+        letter-spacing: 42px;
+        border: 0;
+        background-image: linear-gradient(to left, #ccc 70%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 50px 1px;
+        background-repeat: repeat-x;
+        background-position-x: 35px;
+        width: 220px;
+        min-width: 220px;
+        &:focus {
+            outline: none;
+            background-image: linear-gradient(to left, $primary 70%, rgba(255, 255, 255, 0) 0%);
+        }
+    }
+}

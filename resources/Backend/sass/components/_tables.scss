@@ -1,0 +1,82 @@
+.table-card {
+    .action-button {
+        font-size: 20px;
+        padding: 6px 2px;
+        min-width: 40px;
+        display: inline-block;
+        color: $primary;
+    }
+    .form-control.dark {
+        background: #dae1ec;
+        border-color: #dae1ec;
+
+        &:focus {
+            background: #dee4ec;
+            // border-color: #fff;
+        }
+    }
+    .card-body {
+        padding: 0;
+        min-height: 400px;
+    }
+
+    .card-header {
+        background: linear-gradient(0deg, #e9eff9, #f5f5f5);
+        border-bottom: 1px solid rgb(233, 239, 249);
+        padding: 1rem 0.75rem;
+    }
+}
+
+
+
+.table {
+    font-size: 13px;
+
+    .custom-control-label {
+        vertical-align: text-top;
+        cursor: pointer;
+    }
+
+    .custom-control {
+        margin-bottom: 0;
+    }
+
+    th, td {
+        border: 0;
+    }
+
+    tr.inactive {
+        color: #a7a7a7;
+    }
+
+    .single-action {
+        max-width: 24px;
+    }
+
+    thead th {
+        border-bottom: 1px solid #dee2e6;
+        text-transform: uppercase;
+    }
+
+    .thead-light th {
+        background-color: #e9eff9;
+        border-color: #f4f7fc;
+    }
+}
+
+.table-striped tbody tr {
+    background-color: #f4f7fc;
+
+    &:nth-of-type(odd) {
+        background-color: #fff;
+    }
+
+    &:not(.no-data-row):hover {
+        transform: scale(1);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    }
+
+    &:not(.no-data-row):last-child:hover {
+        box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.1);
+    }
+}

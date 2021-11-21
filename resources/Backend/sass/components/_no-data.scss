@@ -1,0 +1,17 @@
+// No Data
+.no-data {
+    text-align: center;
+    min-height: 280px;
+    padding: 30px 12px;
+
+    img {
+        max-width: 280px;
+        width: 100%;
+    }
+}
+
+.no-data-row {
+    .no-data img {
+        max-width: 200px;
+    }
+}

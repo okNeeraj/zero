@@ -1,0 +1,51 @@
+.mt-form-group {
+	position: relative;
+	padding-top: 22px;
+}
+.mt-label {
+	position: absolute;
+	margin: 0;
+	height: calc(2.25rem + 2px);
+    padding: 0.375rem 0;
+	font-size: 1rem;
+    line-height: 1.5;
+	transition: 0.3s;
+	cursor: text;
+	color: #6c757d;
+	font-weight: normal;
+	width: 100%;
+	&.active {
+		top: 0;
+		padding: 0;
+		height: auto;
+		font-size: 12px;
+		color: $primary;
+	}
+}
+
+.mt-input,
+.mt-form-group .form-control .btn {
+	padding-left: 0;
+	padding-right: 0;
+	border-radius: 0;
+	border: 0;
+    border-bottom: 1px solid #ccc;
+	background: transparent;
+    &.no-float {
+    	padding: .375rem 0;
+    }
+    &:disabled, &[readonly] {
+    	background-color: #ffffff;
+    	opacity: 0.5;
+    }
+	&:focus {
+		background: transparent;
+	}
+}
+
+.form-control.is-invalid ~ .dropdown-toggle {
+    border-color: #dc3545;
+}
+.mt-form-group .bootstrap-select.show .btn {
+    border-color: $primary;
+}

@@ -1,0 +1,73 @@
+// Config
+@import 'variables';
+@import "mixins";
+
+// Bootstrap
+@import "plugins/bootstrap";
+@import "plugins/bootstrapSelect/bootstrap-select";
+@import "plugins/flaticon";
+@import "plugins/simplebar/simplebar";
+
+body {
+    background-color: #eeeeee;
+    background-color: $lightGray;
+    font-family: $mainFont, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a {
+    color: $primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+        text-decoration: none;
+        color: darken($primary, 13%);
+    }
+}
+
+// Temperory Style
+.custom-control-label {
+    padding-top: 3px;
+}
+
+// Reset
+@import "components/reset";
+
+// Core Layout's Structure
+@import "components/layout";
+
+// Buttons
+@import "components/buttons";
+
+// Basic UI Helpers
+@import "components/helpers";
+
+// Modal
+@import "components/modal";
+
+// Cards
+@import "components/cards";
+
+// Tables
+@import "components/tables";
+
+// Chatroom
+@import "components/chatroom";
+
+// Form Inputs
+@import "components/inputs";
+
+// Materialize Form Inputs
+@import "components/materialize-inputs";
+
+// Chatroom
+@import "components/skins";
+
+// No Data
+@import "components/no-data";
+
+// Chatroom
+@import "components/login";

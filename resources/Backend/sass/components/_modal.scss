@@ -1,0 +1,30 @@
+.modal-backdrop {
+    background-color: #f5f5f5;
+
+    &.show {
+        opacity: .9;
+    }
+}
+
+.modal-content {
+    border: 0;
+    border-radius: .3rem;
+    box-shadow: 4px 5px 36px -25px;
+}
+
+.modal {
+    &.fade .modal-dialog {
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+        -webkit-transform: translate(0,-10px);
+        transform: translate(0,-10px);
+        transform: scale(0.90);
+    }
+
+    &.show .modal-dialog {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+        transform: scale(1);
+    }
+}
